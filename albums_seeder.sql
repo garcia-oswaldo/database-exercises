@@ -19,3 +19,4 @@ use codeup_test_db;
 # SELECT * FROM albums;
 # SELECT * FROM quotes WHERE author_last_name = 'Adams';
 SELECT * FROM quotes WHERE id = 5;
+truncate albums
