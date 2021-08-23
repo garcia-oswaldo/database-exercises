@@ -1,9 +1,13 @@
 use codeup_test_db;
 
-# select * from albums;
-#
+SELECT 'These are my albums' AS 'Info';
+select * from albums;
+
+SELECT 'release dates less than 1980' AS 'Info';
 SELECT * FROM albums WHERE release_date <'1980';
-# SELECT * FROM albums WHERE albums.artist= 'ABBA';
+
+SELECT 'The artist abba' AS 'Info';
+SELECT * FROM albums WHERE albums.artist= 'ABBA';
 
 #
 # UPDATE albums
