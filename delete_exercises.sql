@@ -7,8 +7,8 @@ use codeup_test_db;
 # select * from albums Where artist = 'Whitney Houston'
 
 -- released albums after 1991 verified deleted
-Delete * FROM albums WHERE release_date >= '1991';
+Delete * FROM albums WHERE release_date > '1991';
 -- verify that disco is dead
-Delete * FROM albums WHERE albums.genre = 'disco';
+Delete * FROM albums WHERE genre = 'disco';
 -- verify whitney houston has been deleted
 Delete* from albums Where artist = 'Whitney Houston'

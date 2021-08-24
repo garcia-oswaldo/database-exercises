@@ -1,5 +1,5 @@
 use codeup_test_db;
-
+# file used to enter records
 # insert into albums (artist, name, release_date, sales, genre)
 # values ('ACDC', 'Black in Black', '1980', 29.9, 'Hard Rock'),
 # ('MeatLoaf','Bat our of Hell', '1977', 21.7, 'Hard Rock'),
