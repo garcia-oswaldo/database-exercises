@@ -12,3 +12,7 @@ Delete * FROM albums WHERE release_date > '1991';
 Delete * FROM albums WHERE genre = 'disco';
 -- verify whitney houston has been deleted
 Delete* from albums Where artist = 'Whitney Houston'
+
+select * FROM albums WHERE release_date > '1991';
+select * FROM albums WHERE genre = 'disco';
+select * from albums Where artist = 'Whitney Houston'
