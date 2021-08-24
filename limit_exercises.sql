@@ -36,15 +36,18 @@ limit 5;
 #     254466
 #     47978
 #     253939
+
+
 #     Try to think of your results as batches, sets, or pages. The
 #     first five results are your first page.
 #     The five after that would be your second page, etc. Update the
 #     previous query to find the tenth page of results. The employee number
 #     results should be:
+
 SELECT salaries.emp_no
 FROM salaries
 order by salaries.salary desc
-limit 4 offset 46;
+limit 5 offset 45;
 
 #     254466
 #     492164
