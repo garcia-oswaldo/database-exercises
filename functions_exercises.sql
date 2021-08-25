@@ -48,6 +48,7 @@ limit 1;
 select *, DATEDIFF(CURDATE(), employees.employees.hire_date) total
 from employees
 where year(hire_date) between 1990 and 1999
+  g
 and month(birth_date) = 12
 and day(birth_date) = 25
 order by employees.employees.hire_date desc;
