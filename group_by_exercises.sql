@@ -14,7 +14,7 @@ from titles;
 # Technique Leader
 # Manager
 # Find your query for employees whose last names start and end with 'E'.
-select last_name
+select *
 from employees
 where last_name like 'e%e';
 
@@ -39,7 +39,8 @@ order by last_name;
 select first_name, last_name
 from employees
 where last_name like 'e%e'
-group by first_name,last_name;
+group by first_name,last_name
+order by last_name;
 
 
 
@@ -56,7 +57,7 @@ group by last_name;
 # Add a COUNT() to your results and use ORDER BY to make it easier to find
 # employees whose unusual name is shared with others.
 
-select count(last_name), last_name
+select count(last_name) count , last_name
 from employees
 where last_name like '%q%' and last_name not like '%qu%'
 group by last_name
