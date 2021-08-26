@@ -12,7 +12,7 @@ LIMIT 10;
 
 #
 # Add the date of birth for each employee as 'DOB' to the query.
-SELECT CONCAT( emp_no,' - ' ,last_name, ' ', first_name) AS full_name, birth_date AS DOB
+SELECT CONCAT( emp_no,' - ' ,last_name, ' , ', first_name) AS full_name, birth_date AS DOB
 FROM employees
 LIMIT 10;
 # Update the query to format full name to include the employee
